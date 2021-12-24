@@ -18,6 +18,7 @@ struct MovieService: MovieOnlineServiceProtocol {
                       url: $0.url,
                       runtime: $0.runtime,
                       premiered: $0.premiered,
+                      averageRating: $0.averageRating,
                       mediumImage: $0.mediumImage,
                       originalImage: $0.originalImage)
             }

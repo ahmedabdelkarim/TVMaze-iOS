@@ -13,6 +13,7 @@ struct Movie {
     let url: String
     let runtime: Int?
     let premiered: String
+    let averageRating: Float?
     let mediumImage: String?
     let originalImage: String?
 }

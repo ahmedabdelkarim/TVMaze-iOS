@@ -13,7 +13,7 @@ enum MoviesRequests: HttpRequest {
     var url: String {
         switch self {
             case .getMovies:
-                return RequestUrls.baseUrl + "shows?q=Future"
+                return RequestUrls.baseUrl + "shows?q=spider"
         }
     }
     
