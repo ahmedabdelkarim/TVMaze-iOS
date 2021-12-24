@@ -12,6 +12,7 @@ struct MovieResponse: Decodable {
     let id: Int
     let name: String
     let url: String
+    let summary: String
     let runtime: Int?
     let premiered: String
     let averageRating: Float?
@@ -28,6 +29,7 @@ struct MovieResponse: Decodable {
         let id: Int
         let name: String
         let url: String
+        let summary: String
         let runtime: Int?
         let premiered: String
         let rating: Rating?
@@ -50,6 +52,7 @@ struct MovieResponse: Decodable {
         self.id = show.id
         self.name = show.name
         self.url = show.url
+        self.summary = show.summary
         self.runtime = show.runtime
         self.premiered = show.premiered
         self.averageRating = show.rating?.average
