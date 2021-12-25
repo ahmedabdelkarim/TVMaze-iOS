@@ -17,18 +17,25 @@ struct MovieRepository: MovieRepositoryProtocol {
     }
     
     func getMovies(success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void) {
-        // fetch online, if failed fetch offline
+        // try fetch online, if failed try fetch offline
         onlineService?.getMovies(success: { movies in
             success(movies)
             
-            // update offline store in background
+            // update offline store if exists
             offlineStore?.updateMovies(with: movies, success: {
                 // TODO: - handle
             }, failure: { error in
                 // TODO: - handle
             })
         }, failure: { error in
-            offlineStore?.getMovies(success: { movies in
+            // if no offline store exists
+            guard let offlineStore = offlineStore else {
+                failure(error)
+                return
+            }
+            
+            // use offline store if exists
+            offlineStore.getMovies(success: { movies in
                 success(movies)
             }, failure: { error in
                 failure(error)

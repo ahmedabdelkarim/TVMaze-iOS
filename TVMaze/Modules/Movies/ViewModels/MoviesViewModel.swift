@@ -7,18 +7,28 @@
 
 import Foundation
 
-struct MoviesViewModel {
+class MoviesViewModel {
     //MARK: - Properties
-    let movieRepository: MovieRepositoryProtocol
+    let movieRepository: MovieRepositoryProtocol?
     private(set) var movies = [Movie]()
+    
+    // MARK: - Init
+    init(movieRepository: MovieRepositoryProtocol?) {
+        self.movieRepository = movieRepository
+    }
     
     //MARK: - Methods
     func getMovies(success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void) {
-        movieRepository.getMovies(success: { movies in
+        movieRepository?.getMovies(success: { movies in
+            self.movies = movies
             success(movies)
         }, failure: { error in
             failure(error)
         })
     }
     
+    func clearMovies(done: () -> Void) {
+        self.movies = []
+        done()
+    }
 }
