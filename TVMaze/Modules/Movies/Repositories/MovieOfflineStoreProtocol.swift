@@ -8,6 +8,6 @@
 import Foundation
 
 protocol MovieOfflineStoreProtocol {
-    func getMovies(success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void)
-    func updateMovies(with movies: [Movie], success: @escaping () -> Void, failure: @escaping (Error?) -> Void)
+    func getMovies(for searchText: String, success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void)
+    func storeMovies(_ movies: [Movie], success: @escaping () -> Void, failure: @escaping (Error?) -> Void)
 }

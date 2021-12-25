@@ -9,6 +9,7 @@ import UIKit
 
 class MovieDetailsViewController: UIViewController {
     // MARK: - Outlets
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var summaryLabel: UILabel!
     
@@ -28,6 +29,10 @@ class MovieDetailsViewController: UIViewController {
             return
         }
         
+        // display name
+        nameLabel.text = movie.name
+        
+        // display summary from html
         if let summary = movie.summary {
             // summary repeated for testing
             summaryLabel.attributedText = (summary + summary + summary + summary + summary).htmlAttributedString
@@ -36,7 +41,7 @@ class MovieDetailsViewController: UIViewController {
             summaryLabel.text = "No summary"
         }
         
-        // load image (show medium temp until original loaded)
+        // load image (show medium image temporarily until original image loaded)
         movie.getMediumImage(success: { [weak self] image in
             DispatchQueue.main.async {
                 self?.movieImageView.image = image
@@ -47,18 +52,24 @@ class MovieDetailsViewController: UIViewController {
         })
     }
     
-    func loadOriginalImage() {
+    // MARK: - Private Methods
+    private func loadOriginalImage() {
         guard let viewModel = viewModel, let movie = viewModel.movie else {
             return
         }
         
         movie.getOriginalImage(success: { [weak self] image in
-            // waiting here is to demonstrate loading of original image
+            // waiting here is intended to demonstrate loading of original image
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 self?.movieImageView.image = image
             }
         }, failure: {
             print("failed to download original image for movie: \(movie.name)")
         })
+    }
+    
+    // MARK: - Actions
+    @IBAction func linkButtonTapped(_ sender: Any) {
+        viewModel?.openMovieLink()
     }
 }

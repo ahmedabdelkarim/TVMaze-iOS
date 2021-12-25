@@ -23,11 +23,14 @@ class MovieCell: UITableViewCell {
     // MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
+        // change selection color
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = .clear
+        selectedBackgroundView = backgroundView
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-
         // set cell inner spacing
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0))
     }
@@ -53,7 +56,12 @@ class MovieCell: UITableViewCell {
         }
         
         // display premiered
-        premieredLabel.text = movie.premiered
+        if let premiered = movie.premiered {
+            premieredLabel.text = premiered
+        }
+        else {
+            premieredLabel.text = "n/a"
+        }
         
         // display runtime
         if let runtime = movie.runtime {
@@ -73,8 +81,6 @@ class MovieCell: UITableViewCell {
             print("failed to download medium image for movie: \(movie.name)")
         })
     }
-    
-    // MARK: - Private Methods
     
     // MARK: - Actions
     @IBAction func linkButtonTapped(_ sender: Any) {

@@ -18,8 +18,8 @@ class MoviesViewModel {
     }
     
     //MARK: - Methods
-    func getMovies(success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void) {
-        movieRepository?.getMovies(success: { movies in
+    func getMovies(for searchText: String, success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void) {
+        movieRepository?.getMovies(for: searchText, success: { movies in
             self.movies = movies
             success(movies)
         }, failure: { error in

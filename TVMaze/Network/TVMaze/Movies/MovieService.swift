@@ -8,9 +8,9 @@
 import Foundation
 
 struct MovieService: MovieOnlineServiceProtocol {
-    func getMovies(success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void) {
+    func getMovies(for searchText: String, success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void) {
         // fetch online using HttpClient
-        HttpClient().perform(request: MoviesRequests.getMovies, responseType: [MovieResponse].self, success: { response in
+        HttpClient().perform(request: MoviesRequests.getMovies(searchText: searchText), responseType: [MovieResponse].self, success: { response in
             // mapping
             let movies = response.body?.map {
                 Movie(id: $0.id,

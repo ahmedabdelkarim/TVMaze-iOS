@@ -14,7 +14,7 @@ struct MovieResponse: Decodable {
     let url: String
     let summary: String?
     let runtime: Int?
-    let premiered: String
+    let premiered: String?
     let averageRating: Float?
     let mediumImage: String?
     let originalImage: String?
@@ -31,7 +31,7 @@ struct MovieResponse: Decodable {
         let url: String
         let summary: String?
         let runtime: Int?
-        let premiered: String
+        let premiered: String?
         let rating: Rating?
         let image: Image?
         

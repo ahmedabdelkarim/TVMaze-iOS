@@ -10,39 +10,58 @@ import UIKit
 class MoviesViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var moviesTable: UITableView!
+    @IBOutlet weak var emptyStateView: UIView!
     
     // MARK: - Properties
     let viewModel = DependencyRegistry.default.MoviesViewModelInstance()
+    private let searchController = UISearchController(searchResultsController: nil)
+    private var searchText = "spider man" // initial search text to show something when loaded
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureSearchController()
         configureMoviesTable()
         moviesTable.refreshControl?.beginRefreshing()
-        loadMovies()
+        loadMovies(for: searchText)
     }
     
     // MARK: - Methods
+    func configureSearchController() {
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search by movie name"
+        searchController.searchBar.delegate = self
+        
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        definesPresentationContext = true
+    }
+    
     func configureMoviesTable() {
         moviesTable.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0)
         
         //enable pull refresh
-        moviesTable.refreshControl = UIRefreshControl()
+        let refreshControl = UIRefreshControl()
+        refreshControl.tintColor = UIColor(named: "AccentColor")
+        moviesTable.refreshControl = refreshControl
         moviesTable.refreshControl?.addTarget(self, action: #selector(refreshMovies), for: .valueChanged)
         
         moviesTable.registerCell(ofType: MovieCell.self)
     }
     
     @objc func refreshMovies() {
-        loadMovies()
+        loadMovies(for: searchText)
     }
     
-    func loadMovies() {
-        viewModel.getMovies(success: { [weak self] movies in
+    func loadMovies(for searchText: String) {
+        viewModel.getMovies(for: searchText, success: { [weak self] movies in
             DispatchQueue.main.async {
                 self?.moviesTable.refreshControl?.endRefreshing()
                 self?.moviesTable.reloadData()
+                
+                self?.emptyStateView.isHidden = !movies.isEmpty
             }
         }, failure: { error in
             if let error = error {
@@ -89,6 +108,22 @@ extension MoviesViewController: UITableViewDelegate {
         else {
             print("Couldn't open movie details")
             // TODO: - Handle
+        }
+    }
+}
+
+extension MoviesViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        // here can handle each change in search text
+        // print(searchController.searchBar.text)
+    }
+}
+
+extension MoviesViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if let searchText = searchBar.text {
+            self.searchText = searchText
+            loadMovies(for: searchText)
         }
     }
 }

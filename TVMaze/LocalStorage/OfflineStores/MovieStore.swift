@@ -8,11 +8,11 @@
 import Foundation
 
 struct MovieStore: MovieOfflineStoreProtocol {
-    func getMovies(success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void) {
-        // TODO: - fetch offline from CoreData in background
+    func getMovies(for searchText: String, success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void) {
+        // TODO: - fetch from CoreData in background
     }
     
-    func updateMovies(with movies: [Movie], success: @escaping () -> Void, failure: @escaping (Error?) -> Void) {
-        // TODO: - update offline in CoreData in background
+    func storeMovies(_ movies: [Movie], success: @escaping () -> Void, failure: @escaping (Error?) -> Void) {
+        // TODO: - store in CoreData in background
     }
 }

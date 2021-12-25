@@ -97,7 +97,12 @@ struct HttpClient {
     /// - Throws: Error if couldn't build URLRequest for any reason.
     /// - Returns: URLRequest ready to be used.
     private func buildURLRequest(with request: HttpRequest) throws -> URLRequest? {
-        guard let requestUrl:URL = URL(string: request.url) else {
+        guard let encodedUrlString = request.url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
+            self.logger?.logError(description: "Couldn't encode request url")
+            return nil
+        }
+        
+        guard let requestUrl:URL = URL(string: encodedUrlString) else {
             self.logger?.logError(description: "Couldn't initialize a valid URL for request")
             return nil
         }

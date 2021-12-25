@@ -8,5 +8,5 @@
 import Foundation
 
 protocol MovieOnlineServiceProtocol {
-    func getMovies(success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void)
+    func getMovies(for searchText: String, success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void)
 }

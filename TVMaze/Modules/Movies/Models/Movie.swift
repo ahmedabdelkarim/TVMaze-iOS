@@ -14,7 +14,7 @@ class Movie {
     let url: String
     let summary: String?
     let runtime: Int?
-    let premiered: String
+    let premiered: String?
     let averageRating: Float?
     let mediumImage: String?
     let originalImage: String?
@@ -25,7 +25,7 @@ class Movie {
     private let downloadLock = NSLock()
     private var downloads = 0 // for testing download lock
     
-    init(id: Int, name: String, url: String, summary: String?, runtime: Int?, premiered: String, averageRating: Float?, mediumImage: String?, originalImage: String?) {
+    init(id: Int, name: String, url: String, summary: String?, runtime: Int?, premiered: String?, averageRating: Float?, mediumImage: String?, originalImage: String?) {
         self.id = id
         self.name = name
         self.url = url
