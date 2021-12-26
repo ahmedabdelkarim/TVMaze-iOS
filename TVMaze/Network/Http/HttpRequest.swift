@@ -10,8 +10,8 @@ import Foundation
 protocol HttpRequest {
     var url: String { get }
     var method: HttpMethod { get }
-    var headers: Dictionary<String,String>? { get }
-    var bodyParameters: Dictionary<String,Any>? { get }
+    var headers: Dictionary<String, String>? { get }
+    var bodyParameters: Dictionary<String, Any>? { get }
 }
 
 enum HttpMethod: String {

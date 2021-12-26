@@ -1,0 +1,882 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+			productName = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00936CD526E90FF439217DC61D8C43F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0F782B973E0A8D07DF4BC2D177B72ADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		11AEF2E8620F48760DFFCF056FB03209 /* Pods-TVMaze-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F17293D5C687BCF49D5B6E0944DE24DD /* Pods-TVMaze-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355434B5356B7D7D8A1BE31A362692FA /* Pods-TVMaze-TVMazeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8889B5D04298789B697BACE1978AC5 /* Pods-TVMaze-TVMazeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		392E22971896DD0F953D34CB29175FE4 /* Pods-TVMaze-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F559F6602D4642F41FCA3CF15A997E /* Pods-TVMaze-dummy.m */; };
+		5EFE906E00DB483815FCBDA35CC76D41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		769C47BA69FE758EF681B2E6F62C8647 /* Pods-TVMaze-TVMazeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AB28EBB02F6309CE741EEE275E66D /* Pods-TVMaze-TVMazeUITests-dummy.m */; };
+		977DA405693A46F708303D956B22921D /* Pods-TVMazeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB174E2DCCA4D0C3024AEE97BB26BB5 /* Pods-TVMazeTests-dummy.m */; };
+		C8E442CD6EA4069434E70718A5E22460 /* Pods-TVMazeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AAD8EE23438A460B00ABA15F9D402D /* Pods-TVMazeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C1563C2F5C1B9DA2DC367B4E634BF28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		B446B88CFD9AB3CC4E12EAAC42D2B1B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD156341FBAEC2607523BD6913D4743E;
+			remoteInfo = "Pods-TVMaze";
+		};
+		B829B4E4400E3177D5ECF82C9D143375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		D050140C6D96B6336A97E43311C2F0E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15C1D95E32C24BF976DA9C5D14400679 /* Pods_TVMaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVMaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C8889B5D04298789B697BACE1978AC5 /* Pods-TVMaze-TVMazeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TVMaze-TVMazeUITests-umbrella.h"; sourceTree = "<group>"; };
+		33F559F6602D4642F41FCA3CF15A997E /* Pods-TVMaze-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TVMaze-dummy.m"; sourceTree = "<group>"; };
+		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		45FEFA12224B542E4ACC08AB5D6AA5BD /* Pods-TVMazeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TVMazeTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E35F658738A7FDF040B4EE8E1D8AC6E /* Pods-TVMazeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TVMazeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		52F339D495A01C418A4E2B6426094539 /* Pods-TVMaze-TVMazeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TVMaze-TVMazeUITests.modulemap"; sourceTree = "<group>"; };
+		5BFD69074842819CE1575F0530770CFD /* Pods-TVMaze-TVMazeUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TVMaze-TVMazeUITests-Info.plist"; sourceTree = "<group>"; };
+		5D4121CED5074903B79082A1AF877F35 /* Pods-TVMaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TVMaze.debug.xcconfig"; sourceTree = "<group>"; };
+		5F5CCF69BAE3FD32BC852E03A663FF36 /* Pods-TVMazeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TVMazeTests.modulemap"; sourceTree = "<group>"; };
+		5FB174E2DCCA4D0C3024AEE97BB26BB5 /* Pods-TVMazeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TVMazeTests-dummy.m"; sourceTree = "<group>"; };
+		676FBEB553F7368793C8C519A00A71CB /* Pods_TVMazeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVMazeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2E7317986CE97788DF46B3BDA9E254 /* Pods-TVMaze-TVMazeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TVMaze-TVMazeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6E9B8E401AEA2E7F6BA48B1439EEC10E /* Pods-TVMaze-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TVMaze-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73AAD8EE23438A460B00ABA15F9D402D /* Pods-TVMazeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TVMazeTests-umbrella.h"; sourceTree = "<group>"; };
+		7B5AB28EBB02F6309CE741EEE275E66D /* Pods-TVMaze-TVMazeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TVMaze-TVMazeUITests-dummy.m"; sourceTree = "<group>"; };
+		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		98086C2C4DC0EF0DA2EB3BA244F0FC98 /* Pods-TVMaze-TVMazeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TVMaze-TVMazeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1CDA061462B2C540926F4D03AA34244 /* Pods_TVMaze_TVMazeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVMaze_TVMazeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B394D507EF14D5FCB5A38541186034E2 /* Pods-TVMaze-TVMazeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TVMaze-TVMazeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF3068CAAAF235EC0E89C8C9E8DE68DE /* Pods-TVMazeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TVMazeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D3FC8795BA90B13BCAA3E836E29AA0AA /* Pods-TVMaze.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TVMaze.modulemap"; sourceTree = "<group>"; };
+		DB023DB8E40F228CA9679E23EF60AB79 /* Pods-TVMaze-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TVMaze-acknowledgements.plist"; sourceTree = "<group>"; };
+		DC283C018A72DF1255B3D38B4306B4F2 /* Pods-TVMazeTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TVMazeTests-Info.plist"; sourceTree = "<group>"; };
+		E68C4C272827F37CF5F9828CB3B3E253 /* Pods-TVMaze-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TVMaze-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F17293D5C687BCF49D5B6E0944DE24DD /* Pods-TVMaze-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TVMaze-umbrella.h"; sourceTree = "<group>"; };
+		F2759F5C3659919386B103C6BCF294D3 /* Pods-TVMazeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TVMazeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F541BEC2D28AB6FAF82A08C77F4DBE35 /* Pods-TVMaze-TVMazeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TVMaze-TVMazeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FF764C8C183D756A80FB5A749A2175D9 /* Pods-TVMaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TVMaze.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06267106189FA94388910F64B4001758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00936CD526E90FF439217DC61D8C43F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		962750D23BCE2EE4D967D5E683B6D710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F782B973E0A8D07DF4BC2D177B72ADE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4DF832E3383CC743EDACDC207C60F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EFE906E00DB483815FCBDA35CC76D41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F0080BBF670DE8D4FB6739E66E3C4F /* Pods-TVMazeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F5CCF69BAE3FD32BC852E03A663FF36 /* Pods-TVMazeTests.modulemap */,
+				CF3068CAAAF235EC0E89C8C9E8DE68DE /* Pods-TVMazeTests-acknowledgements.markdown */,
+				4E35F658738A7FDF040B4EE8E1D8AC6E /* Pods-TVMazeTests-acknowledgements.plist */,
+				5FB174E2DCCA4D0C3024AEE97BB26BB5 /* Pods-TVMazeTests-dummy.m */,
+				DC283C018A72DF1255B3D38B4306B4F2 /* Pods-TVMazeTests-Info.plist */,
+				73AAD8EE23438A460B00ABA15F9D402D /* Pods-TVMazeTests-umbrella.h */,
+				F2759F5C3659919386B103C6BCF294D3 /* Pods-TVMazeTests.debug.xcconfig */,
+				45FEFA12224B542E4ACC08AB5D6AA5BD /* Pods-TVMazeTests.release.xcconfig */,
+			);
+			name = "Pods-TVMazeTests";
+			path = "Target Support Files/Pods-TVMazeTests";
+			sourceTree = "<group>";
+		};
+		233384479981D2F573403E99A09A2B49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15C1D95E32C24BF976DA9C5D14400679 /* Pods_TVMaze.framework */,
+				A1CDA061462B2C540926F4D03AA34244 /* Pods_TVMaze_TVMazeUITests.framework */,
+				676FBEB553F7368793C8C519A00A71CB /* Pods_TVMazeTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CB111935AF0392D734968610A6997D0 /* Pods-TVMaze-TVMazeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52F339D495A01C418A4E2B6426094539 /* Pods-TVMaze-TVMazeUITests.modulemap */,
+				98086C2C4DC0EF0DA2EB3BA244F0FC98 /* Pods-TVMaze-TVMazeUITests-acknowledgements.markdown */,
+				F541BEC2D28AB6FAF82A08C77F4DBE35 /* Pods-TVMaze-TVMazeUITests-acknowledgements.plist */,
+				7B5AB28EBB02F6309CE741EEE275E66D /* Pods-TVMaze-TVMazeUITests-dummy.m */,
+				5BFD69074842819CE1575F0530770CFD /* Pods-TVMaze-TVMazeUITests-Info.plist */,
+				1C8889B5D04298789B697BACE1978AC5 /* Pods-TVMaze-TVMazeUITests-umbrella.h */,
+				B394D507EF14D5FCB5A38541186034E2 /* Pods-TVMaze-TVMazeUITests.debug.xcconfig */,
+				6C2E7317986CE97788DF46B3BDA9E254 /* Pods-TVMaze-TVMazeUITests.release.xcconfig */,
+			);
+			name = "Pods-TVMaze-TVMazeUITests";
+			path = "Target Support Files/Pods-TVMaze-TVMazeUITests";
+			sourceTree = "<group>";
+		};
+		4D1665A0753252FADEA8AC3742DB721C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD4B5977380B994D230F776878DD5018 /* Pods-TVMaze */,
+				3CB111935AF0392D734968610A6997D0 /* Pods-TVMaze-TVMazeUITests */,
+				04F0080BBF670DE8D4FB6739E66E3C4F /* Pods-TVMazeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */,
+				7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D96179D43A67C5D5323B0682D32C133C /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD4B5977380B994D230F776878DD5018 /* Pods-TVMaze */ = {
+			isa = PBXGroup;
+			children = (
+				D3FC8795BA90B13BCAA3E836E29AA0AA /* Pods-TVMaze.modulemap */,
+				E68C4C272827F37CF5F9828CB3B3E253 /* Pods-TVMaze-acknowledgements.markdown */,
+				DB023DB8E40F228CA9679E23EF60AB79 /* Pods-TVMaze-acknowledgements.plist */,
+				33F559F6602D4642F41FCA3CF15A997E /* Pods-TVMaze-dummy.m */,
+				6E9B8E401AEA2E7F6BA48B1439EEC10E /* Pods-TVMaze-Info.plist */,
+				F17293D5C687BCF49D5B6E0944DE24DD /* Pods-TVMaze-umbrella.h */,
+				5D4121CED5074903B79082A1AF877F35 /* Pods-TVMaze.debug.xcconfig */,
+				FF764C8C183D756A80FB5A749A2175D9 /* Pods-TVMaze.release.xcconfig */,
+			);
+			name = "Pods-TVMaze";
+			path = "Target Support Files/Pods-TVMaze";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				965877409E01FB3D85D85E90E6B30185 /* Pods */,
+				233384479981D2F573403E99A09A2B49 /* Products */,
+				4D1665A0753252FADEA8AC3742DB721C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D96179D43A67C5D5323B0682D32C133C /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */,
+			);
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		53F27D9086BD4F92108DB49A13512738 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E442CD6EA4069434E70718A5E22460 /* Pods-TVMazeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CE5C6F6C2AE800A530ED8CDEF5404E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AEF2E8620F48760DFFCF056FB03209 /* Pods-TVMaze-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72856213F3FAC3BFEB794EBCC9A2CED8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				355434B5356B7D7D8A1BE31A362692FA /* Pods-TVMaze-TVMazeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1303398D5D018914A21C6CFFD4B184DA /* Pods-TVMaze-TVMazeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10E2D88C2961052A199AF95ABD5915B0 /* Build configuration list for PBXNativeTarget "Pods-TVMaze-TVMazeUITests" */;
+			buildPhases = (
+				72856213F3FAC3BFEB794EBCC9A2CED8 /* Headers */,
+				0630F13FF187CB7F6A6DA9406A82FB77 /* Sources */,
+				962750D23BCE2EE4D967D5E683B6D710 /* Frameworks */,
+				EB13F34CBF6D9952BA6CDBDED5D120D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48C0A7CF98D15A4E96609D5ECB420C6E /* PBXTargetDependency */,
+			);
+			name = "Pods-TVMaze-TVMazeUITests";
+			productName = "Pods-TVMaze-TVMazeUITests";
+			productReference = A1CDA061462B2C540926F4D03AA34244 /* Pods_TVMaze_TVMazeUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D36F1FE09F7311A5DE22B5C3BA868B2D /* Pods-TVMazeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E40E165A550D5E9213FC5CA94C973514 /* Build configuration list for PBXNativeTarget "Pods-TVMazeTests" */;
+			buildPhases = (
+				53F27D9086BD4F92108DB49A13512738 /* Headers */,
+				9CFB3182B693272EBC720CDD166E24F5 /* Sources */,
+				EB4DF832E3383CC743EDACDC207C60F4 /* Frameworks */,
+				557BB9E4DA319872F277D8C056AA69E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93B6E64B7F31951C55DA73DA431758AC /* PBXTargetDependency */,
+				C00E749FE8A6C57D7EF091F7DA0DE67D /* PBXTargetDependency */,
+			);
+			name = "Pods-TVMazeTests";
+			productName = "Pods-TVMazeTests";
+			productReference = 676FBEB553F7368793C8C519A00A71CB /* Pods_TVMazeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD156341FBAEC2607523BD6913D4743E /* Pods-TVMaze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD129880242A42C0064F9EE254CF6958 /* Build configuration list for PBXNativeTarget "Pods-TVMaze" */;
+			buildPhases = (
+				5CE5C6F6C2AE800A530ED8CDEF5404E1 /* Headers */,
+				6524699E2526FC75816A8A0F82856F7C /* Sources */,
+				06267106189FA94388910F64B4001758 /* Frameworks */,
+				EE7F2FBEA9BAD37BD3ADE2F73D0EDEBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36E4F0C33757728C6C9DC599CB2CF9A4 /* PBXTargetDependency */,
+			);
+			name = "Pods-TVMaze";
+			productName = "Pods-TVMaze";
+			productReference = 15C1D95E32C24BF976DA9C5D14400679 /* Pods_TVMaze.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1230;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 233384479981D2F573403E99A09A2B49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD156341FBAEC2607523BD6913D4743E /* Pods-TVMaze */,
+				1303398D5D018914A21C6CFFD4B184DA /* Pods-TVMaze-TVMazeUITests */,
+				D36F1FE09F7311A5DE22B5C3BA868B2D /* Pods-TVMazeTests */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		557BB9E4DA319872F277D8C056AA69E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB13F34CBF6D9952BA6CDBDED5D120D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7F2FBEA9BAD37BD3ADE2F73D0EDEBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0630F13FF187CB7F6A6DA9406A82FB77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				769C47BA69FE758EF681B2E6F62C8647 /* Pods-TVMaze-TVMazeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6524699E2526FC75816A8A0F82856F7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392E22971896DD0F953D34CB29175FE4 /* Pods-TVMaze-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CFB3182B693272EBC720CDD166E24F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				977DA405693A46F708303D956B22921D /* Pods-TVMazeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36E4F0C33757728C6C9DC599CB2CF9A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = B829B4E4400E3177D5ECF82C9D143375 /* PBXContainerItemProxy */;
+		};
+		48C0A7CF98D15A4E96609D5ECB420C6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 6C1563C2F5C1B9DA2DC367B4E634BF28 /* PBXContainerItemProxy */;
+		};
+		93B6E64B7F31951C55DA73DA431758AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TVMaze";
+			target = DD156341FBAEC2607523BD6913D4743E /* Pods-TVMaze */;
+			targetProxy = B446B88CFD9AB3CC4E12EAAC42D2B1B4 /* PBXContainerItemProxy */;
+		};
+		C00E749FE8A6C57D7EF091F7DA0DE67D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = D050140C6D96B6336A97E43311C2F0E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		125C51B0F88E28C868DC90BD45E4E727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		34F81D0886927C5B25AEB1641D4184FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45FEFA12224B542E4ACC08AB5D6AA5BD /* Pods-TVMazeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TVMazeTests/Pods-TVMazeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TVMazeTests/Pods-TVMazeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51E52CC58F489AFC0CCE25F2A4F044F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D4121CED5074903B79082A1AF877F35 /* Pods-TVMaze.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TVMaze/Pods-TVMaze-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TVMaze/Pods-TVMaze.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		758C1E7119520D36C14E1A512DDCFB3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2759F5C3659919386B103C6BCF294D3 /* Pods-TVMazeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TVMazeTests/Pods-TVMazeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TVMazeTests/Pods-TVMazeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		92A3E9AC052A7345115439021B218E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBC851D81605E126B218161E2F60D8A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2E7317986CE97788DF46B3BDA9E254 /* Pods-TVMaze-TVMazeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TVMaze-TVMazeUITests/Pods-TVMaze-TVMazeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TVMaze-TVMazeUITests/Pods-TVMaze-TVMazeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D81D1F80AD0C9E5D4AE00D14C20D8A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF764C8C183D756A80FB5A749A2175D9 /* Pods-TVMaze.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TVMaze/Pods-TVMaze-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TVMaze/Pods-TVMaze.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F04E909FA53885E5521405B9512D22A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B394D507EF14D5FCB5A38541186034E2 /* Pods-TVMaze-TVMazeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TVMaze-TVMazeUITests/Pods-TVMaze-TVMazeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TVMaze-TVMazeUITests/Pods-TVMaze-TVMazeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10E2D88C2961052A199AF95ABD5915B0 /* Build configuration list for PBXNativeTarget "Pods-TVMaze-TVMazeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F04E909FA53885E5521405B9512D22A4 /* Debug */,
+				BBC851D81605E126B218161E2F60D8A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125C51B0F88E28C868DC90BD45E4E727 /* Debug */,
+				92A3E9AC052A7345115439021B218E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */,
+				AD81E62ACCB0B7A923FC8AA288F9921E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E40E165A550D5E9213FC5CA94C973514 /* Build configuration list for PBXNativeTarget "Pods-TVMazeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758C1E7119520D36C14E1A512DDCFB3F /* Debug */,
+				34F81D0886927C5B25AEB1641D4184FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD129880242A42C0064F9EE254CF6958 /* Build configuration list for PBXNativeTarget "Pods-TVMaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51E52CC58F489AFC0CCE25F2A4F044F4 /* Debug */,
+				D81D1F80AD0C9E5D4AE00D14C20D8A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

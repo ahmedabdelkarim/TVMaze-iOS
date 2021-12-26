@@ -8,49 +8,45 @@
 import Foundation
 
 protocol HttpJsonConverter {
-    init(encoder:JSONEncoder, decoder:JSONDecoder)
+    init(encoder: JSONEncoder, decoder: JSONDecoder)
     
-    func getObject<T:Decodable>(from jsonData:Data) throws -> T
-    func getData<T:Encodable>(from object:T) throws -> Data
+    func getObject<T: Decodable>(from jsonData: Data) throws -> T
+    func getData<T: Encodable>(from object: T) throws -> Data
 }
 
 class DefaultHttpJsonConverter: HttpJsonConverter {
-    //MARK: - Properties
+    // MARK: - Properties
     private var encoder: JSONEncoder
     private var decoder: JSONDecoder
     
-    //MARK: - Init
+    // MARK: - Init
     init() {
         encoder = JSONEncoder()
         decoder = JSONDecoder()
     }
     
-    required init(encoder:JSONEncoder, decoder:JSONDecoder) {
+    required init(encoder: JSONEncoder, decoder: JSONDecoder) {
         self.encoder = encoder
         self.decoder = decoder
     }
     
-    //MARK: - Methods
-    func getObject<T:Decodable>(from jsonData:Data) throws -> T {
-        do
-        {
-            let object:T = try decoder.decode(T.self, from: jsonData)
+    // MARK: - Methods
+    func getObject<T: Decodable>(from jsonData: Data) throws -> T {
+        do {
+            let object: T = try decoder.decode(T.self, from: jsonData)
             return object
         }
-        catch
-        {
+        catch {
             throw error
         }
     }
     
-    func getData<T:Encodable>(from object:T) throws -> Data {
-        do
-        {
-            let jsonData:Data = try encoder.encode(object)
+    func getData<T: Encodable>(from object: T) throws -> Data {
+        do {
+            let jsonData: Data = try encoder.encode(object)
             return jsonData
         }
-        catch
-        {
+        catch {
             throw error
         }
     }

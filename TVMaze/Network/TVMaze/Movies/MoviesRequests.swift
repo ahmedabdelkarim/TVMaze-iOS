@@ -8,12 +8,12 @@
 import Foundation
 
 enum MoviesRequests: HttpRequest {
-    case getMovies
+    case getMovies(searchText: String)
     
     var url: String {
         switch self {
-            case .getMovies:
-                return RequestUrls.baseUrl + "shows?q=Future"
+            case .getMovies(let searchText):
+                return RequestUrls.baseUrl + "shows?q=\(searchText)"
         }
     }
     
