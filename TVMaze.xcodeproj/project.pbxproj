@@ -445,10 +445,10 @@
 			buildConfigurationList = F5FE36EF2774EC6300DDDE13 /* Build configuration list for PBXNativeTarget "TVMaze" */;
 			buildPhases = (
 				FDA1C1BD69D80A89DEC0853C /* [CP] Check Pods Manifest.lock */,
+				F576F89227789E0300D7462D /* SwiftLint */,
 				F5FE36C12774EC6100DDDE13 /* Sources */,
 				F5FE36C22774EC6100DDDE13 /* Frameworks */,
 				F5FE36C32774EC6100DDDE13 /* Resources */,
-				F576F89227789E0300D7462D /* SwiftLint */,
 			);
 			buildRules = (
 			);
