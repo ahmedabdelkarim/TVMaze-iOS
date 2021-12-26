@@ -29,7 +29,9 @@ class MoviesTests: XCTestCase {
             XCTFail("Expected to succeed, but got error: \(String(describing: error))")
         })
     }
-
+    
+    //other test cases..
+    
 }
 
 private class MockMovieRepository: MovieRepositoryProtocol {

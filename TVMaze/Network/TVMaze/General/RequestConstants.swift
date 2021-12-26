@@ -8,7 +8,7 @@
 import Foundation
 
 struct RequestUrls {
-    static let baseUrl = "http://aspi.tvmaze.com/search/"
+    static let baseUrl = "http://api.tvmaze.com/search/"
 }
 
 enum HttpHeaders: String {
