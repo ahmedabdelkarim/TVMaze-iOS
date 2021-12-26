@@ -104,9 +104,6 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9S-zS-ayc" userLabel="Transparent View">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="609"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="609" id="lrm-wl-L57"/>
-                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7p-zE-HCc" userLabel="Details View">
                                                 <rect key="frame" x="0.0" y="609" width="414" height="504.5"/>
@@ -267,6 +264,7 @@
                         <constraints>
                             <constraint firstItem="vlv-Ox-bak" firstAttribute="bottom" secondItem="863-LM-9e5" secondAttribute="bottom" id="321-DU-SDf"/>
                             <constraint firstItem="vlv-Ox-bak" firstAttribute="top" secondItem="edn-bC-neQ" secondAttribute="top" id="8Rt-n8-3ef"/>
+                            <constraint firstItem="f9S-zS-ayc" firstAttribute="height" secondItem="lgc-Wa-kOf" secondAttribute="height" id="D56-wn-ejo"/>
                             <constraint firstAttribute="trailing" secondItem="vlv-Ox-bak" secondAttribute="trailing" id="Dkl-sh-evq"/>
                             <constraint firstItem="lgc-Wa-kOf" firstAttribute="leading" secondItem="863-LM-9e5" secondAttribute="leading" id="FTq-O2-P2d"/>
                             <constraint firstAttribute="trailing" secondItem="lgc-Wa-kOf" secondAttribute="trailing" id="GnP-ys-L2Q"/>
@@ -311,7 +309,7 @@
     <resources>
         <image name="safari" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.32400000095367432" green="0.56499999761581421" blue="0.53299999237060547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
