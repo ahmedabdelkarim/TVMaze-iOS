@@ -13,7 +13,7 @@ class MoviesViewController: UIViewController {
     @IBOutlet weak var emptyStateView: UIView!
     
     // MARK: - Properties
-    let viewModel = DependencyRegistry.default.MoviesViewModelInstance()
+    let viewModel = DependencyRegistry.default.moviesViewModelWithOnlineOnly()
     private let searchController = UISearchController(searchResultsController: nil)
     private var searchText = "spider man" // initial search text to show something when loaded
     
@@ -63,12 +63,20 @@ class MoviesViewController: UIViewController {
                 
                 self?.emptyStateView.isHidden = !movies.isEmpty
             }
-        }, failure: { error in
+        }, failure: { [weak self] error in
+            var errorMessage = "An error occurred while loading movies"
+            
             if let error = error {
-                print(error)
+                errorMessage = error.localizedDescription
             }
             else {
                 print("unknown error while loading movies")
+            }
+            
+            DispatchQueue.main.async {
+                Alerts.showInfoAlert(viewController: self, title: "Error", message: errorMessage) {
+                    self?.moviesTable.refreshControl?.endRefreshing()
+                }
             }
         })
     }

@@ -23,6 +23,8 @@
 		F51827DA2775FCCE00109436 /* RequestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51827D92775FCCE00109436 /* RequestConstants.swift */; };
 		F51827E22775FEA300109436 /* HttpRequest+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51827E12775FEA300109436 /* HttpRequest+Default.swift */; };
 		F51827E72776093B00109436 /* HttpJsonConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51827E62776093B00109436 /* HttpJsonConverter.swift */; };
+		F55E054C2778B8C600355CF0 /* MoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55E054B2778B8C600355CF0 /* MoviesTests.swift */; };
+		F55E05572778C11900355CF0 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55E05562778C11900355CF0 /* Alerts.swift */; };
 		F5705A392777522D001C02F3 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5705A382777522D001C02F3 /* MovieDetailsViewController.swift */; };
 		F5705A40277759F1001C02F3 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5705A3F277759F1001C02F3 /* String+Extensions.swift */; };
 		F5705A4A27775BD1001C02F3 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5705A4827775BD1001C02F3 /* MovieCell.swift */; };
@@ -46,7 +48,6 @@
 		F5FE36D02774EC6100DDDE13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FE36CE2774EC6100DDDE13 /* Main.storyboard */; };
 		F5FE36D22774EC6300DDDE13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FE36D12774EC6300DDDE13 /* Assets.xcassets */; };
 		F5FE36D52774EC6300DDDE13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FE36D32774EC6300DDDE13 /* LaunchScreen.storyboard */; };
-		F5FE36E02774EC6300DDDE13 /* TVMazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FE36DF2774EC6300DDDE13 /* TVMazeTests.swift */; };
 		F5FE36EB2774EC6300DDDE13 /* TVMazeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FE36EA2774EC6300DDDE13 /* TVMazeUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,8 @@
 		F51827D92775FCCE00109436 /* RequestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConstants.swift; sourceTree = "<group>"; };
 		F51827E12775FEA300109436 /* HttpRequest+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpRequest+Default.swift"; sourceTree = "<group>"; };
 		F51827E62776093B00109436 /* HttpJsonConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpJsonConverter.swift; sourceTree = "<group>"; };
+		F55E054B2778B8C600355CF0 /* MoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTests.swift; sourceTree = "<group>"; };
+		F55E05562778C11900355CF0 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		F5705A382777522D001C02F3 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		F5705A3F277759F1001C02F3 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		F5705A4827775BD1001C02F3 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
@@ -116,7 +119,6 @@
 		F5FE36D42774EC6300DDDE13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5FE36D62774EC6300DDDE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5FE36DB2774EC6300DDDE13 /* TVMazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVMazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5FE36DF2774EC6300DDDE13 /* TVMazeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMazeTests.swift; sourceTree = "<group>"; };
 		F5FE36E12774EC6300DDDE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5FE36E62774EC6300DDDE13 /* TVMazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVMazeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FE36EA2774EC6300DDDE13 /* TVMazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMazeUITests.swift; sourceTree = "<group>"; };
@@ -222,6 +224,14 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		F55E054A2778B8AC00355CF0 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				F55E054B2778B8C600355CF0 /* MoviesTests.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
 		F5705A34277750D9001C02F3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				F5705A50277768DB001C02F3 /* Actions.swift */,
+				F55E05562778C11900355CF0 /* Alerts.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -411,7 +422,7 @@
 		F5FE36DE2774EC6300DDDE13 /* TVMazeTests */ = {
 			isa = PBXGroup;
 			children = (
-				F5FE36DF2774EC6300DDDE13 /* TVMazeTests.swift */,
+				F55E054A2778B8AC00355CF0 /* Movies */,
 				F5FE36E12774EC6300DDDE13 /* Info.plist */,
 			);
 			path = TVMazeTests;
@@ -667,6 +678,7 @@
 				F51667A32776305D00BCB365 /* MoviesViewController.swift in Sources */,
 				F5CB2A6E27752C7B00BA5C6B /* MovieStore.swift in Sources */,
 				F5E874782777A27800E15583 /* ImageDownloader.swift in Sources */,
+				F55E05572778C11900355CF0 /* Alerts.swift in Sources */,
 				F51827B82775F23600109436 /* HttpClient.swift in Sources */,
 				F5705A392777522D001C02F3 /* MovieDetailsViewController.swift in Sources */,
 				F51667A92776311100BCB365 /* DependencyRegistry.swift in Sources */,
@@ -687,7 +699,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5FE36E02774EC6300DDDE13 /* TVMazeTests.swift in Sources */,
+				F55E054C2778B8C600355CF0 /* MoviesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,13 @@ struct DependencyRegistry {
         
     }
     
-    func MoviesViewModelInstance() -> MoviesViewModel {
+    func moviesViewModelWithOnlineOnly() -> MoviesViewModel {
+        let instance = MoviesViewModel(movieRepository: MovieRepository(onlineService: MovieService(), offlineStore: nil))
+        
+        return instance
+    }
+    
+    func moviesViewModelWithOnlineAndOffline() -> MoviesViewModel {
         let instance = MoviesViewModel(movieRepository: MovieRepository(onlineService: MovieService(), offlineStore: MovieStore()))
         
         return instance
