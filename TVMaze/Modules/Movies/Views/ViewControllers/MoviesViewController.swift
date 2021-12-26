@@ -42,7 +42,7 @@ class MoviesViewController: UIViewController {
     func configureMoviesTable() {
         moviesTable.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0)
         
-        //enable pull refresh
+        // enable pull refresh
         let refreshControl = UIRefreshControl()
         refreshControl.tintColor = UIColor(named: "AccentColor")
         moviesTable.refreshControl = refreshControl

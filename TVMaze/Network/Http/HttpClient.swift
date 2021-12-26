@@ -42,16 +42,16 @@ struct HttpClient {
         self.logger = logger
     }
     
-    //MARK: - Methods
+    // MARK: - Methods
     
     /// Perform an Http request.
     /// - Parameters:
     ///   - request: The request  to be performed.
     ///   - success: Success closure.
     ///   - failure: Failure closure.
-    func perform<T: Decodable>(request: HttpRequest, responseType: T.Type, success: @escaping (HttpResponse<T>) -> (), failure: @escaping (Error?) -> ()) {
+    func perform<T: Decodable>(request: HttpRequest, responseType: T.Type, success: @escaping (HttpResponse<T>) -> Void, failure: @escaping (Error?) -> Void) {
         do {
-            guard let urlRequest:URLRequest = try buildURLRequest(with: request)
+            guard let urlRequest = try buildURLRequest(with: request)
             else {
                 failure(nil)
                 return
@@ -90,7 +90,7 @@ struct HttpClient {
         }
     }
     
-    //MARK: - Helper Methods
+    // MARK: - Helper Methods
     
     /// Build URLRequest from information provided by HttpRequest instance.
     /// - Parameter request: HttpRequest instance describing the request.
@@ -102,7 +102,7 @@ struct HttpClient {
             return nil
         }
         
-        guard let requestUrl:URL = URL(string: encodedUrlString) else {
+        guard let requestUrl = URL(string: encodedUrlString) else {
             self.logger?.logError(description: "Couldn't initialize a valid URL for request")
             return nil
         }

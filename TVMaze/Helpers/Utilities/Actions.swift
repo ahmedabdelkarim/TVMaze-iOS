@@ -17,7 +17,7 @@ class Actions {
     static func openLink(_ link: String, success: (() -> Void)? = nil, failure: (() -> Void)? = nil) {
         if var url = URL(string: link) {
             var components = URLComponents(url: url, resolvingAgainstBaseURL: false)
-            if (components?.scheme == nil) {
+            if components?.scheme == nil {
                 components?.scheme = "http"
             }
             

@@ -1,0 +1,13 @@
+disabled_rules:
+  - identifier_name
+  - trailing_whitespace
+  - vertical_whitespace
+  - switch_case_alignment
+  - statement_position
+  - syntactic_sugar
+  - nesting
+  
+line_length: 200
+
+# set reporter to "xcode" to enable inside Xcode
+reporter: "xcode"

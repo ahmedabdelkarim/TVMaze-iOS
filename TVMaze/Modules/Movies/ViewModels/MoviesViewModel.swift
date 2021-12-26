@@ -8,7 +8,7 @@
 import Foundation
 
 class MoviesViewModel {
-    //MARK: - Properties
+    // MARK: - Properties
     let movieRepository: MovieRepositoryProtocol?
     private(set) var movies = [Movie]()
     
@@ -17,7 +17,7 @@ class MoviesViewModel {
         self.movieRepository = movieRepository
     }
     
-    //MARK: - Methods
+    // MARK: - Methods
     func getMovies(for searchText: String, success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void) {
         movieRepository?.getMovies(for: searchText, success: { movies in
             self.movies = movies

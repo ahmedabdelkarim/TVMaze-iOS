@@ -24,7 +24,7 @@ class MovieDetailsViewController: UIViewController {
     }
     
     // MARK: - Methods
-    func showMovieDetails()  {
+    func showMovieDetails() {
         guard let viewModel = viewModel, let movie = viewModel.movie else {
             return
         }

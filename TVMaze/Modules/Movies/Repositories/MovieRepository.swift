@@ -25,6 +25,9 @@ struct MovieRepository: MovieRepositoryProtocol {
             offlineStore?.storeMovies(movies, success: {
                 // TODO: - handle
             }, failure: { error in
+                if let error = error {
+                    print(error)
+                }
                 // TODO: - handle
             })
         }, failure: { error in

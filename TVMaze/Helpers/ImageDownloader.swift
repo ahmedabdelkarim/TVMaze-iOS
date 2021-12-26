@@ -26,13 +26,13 @@ class ImageDownloader {
         }
         
         // fetch image data (URLSession dataTask)
-        //URLSession.shared.dataTask(with: url) { (data, _, _) in
+        // URLSession.shared.dataTask(with: url) { (data, _, _) in
         //    if let data = data {
         //        success(data)
         //    }
         //    else {
         //        failure()
         //    }
-        //}.resume()
+        // }.resume()
     }
 }

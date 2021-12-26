@@ -11,7 +11,7 @@ struct DependencyRegistry {
     // MARK: - Properties
     static let `default`: DependencyRegistry = DependencyRegistry()
     
-    //MARK: - Private Init
+    // MARK: - Private Init
     private init() {
         
     }

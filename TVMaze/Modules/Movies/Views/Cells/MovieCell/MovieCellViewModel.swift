@@ -8,15 +8,15 @@
 import Foundation
 
 class MovieCellViewModel {
-    //MARK: - Properties
+    // MARK: - Properties
     private(set) var movie: Movie!
     
-    //MARK: - Init
+    // MARK: - Init
     init(movie: Movie) {
         self.movie = movie
     }
     
-    //MARK: - Methods
+    // MARK: - Methods
     func openMovieLink() {
         Actions.openLink(self.movie.url)
     }

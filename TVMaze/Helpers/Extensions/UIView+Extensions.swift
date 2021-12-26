@@ -9,7 +9,7 @@ import UIKit
 
 @IBDesignable
 extension UIView {
-    //MARK: - Attributes
+    // MARK: - Attributes
     @IBInspectable var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
